@@ -1,0 +1,59 @@
+.google-button {
+  background-image: url(https://i.ibb.co/jWsmmMJ/google.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+   /* border: none;  */
+   cursor: pointer;
+  height: 38px;
+  padding-left: 40px;
+  vertical-align: middle;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 341px;
+  border:1px solid gray
+}
+
+.icon-img{
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.card-style{
+  width: 25rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 5px solid gray;
+  background-color: #fff5a6;
+  color: black;
+}   
+/* .Card-style{
+  border: 5px solid gray;
+  width: 200px;
+  height: 200px;
+ 
+} */
+.diamond{
+  font-weight: bold;
+  
+}
+.upgrade{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+/* .close{
+ 
+  justify-content: space-between;
+  border: none;
+  position: relative;
+  
+} */
+/* .go{
+  margin-left: 0 auto;
+} */
