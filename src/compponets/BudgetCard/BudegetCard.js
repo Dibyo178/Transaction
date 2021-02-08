@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import './BudgetCard.css'
 
@@ -8,7 +8,7 @@ import { Link ,Button } from '@material-ui/core';
 // import { Button } from 'bootstrap';
 
 const LogIn = () => {
-
+   const [step, setStep] = useState([]);
  
   return (
     <div className='Card-style'>
@@ -21,11 +21,24 @@ const LogIn = () => {
           {/* <p>Don't have account?<span className="commonColor">Create a account</span></p> */}
           <p className='upgrade'>Upgrading to PREMIUM helps you eliminate any barriers and difficulties in managing your cash flow, monthly budget, or future goals. Just one payment and it's yours. 🙌 </p>
            
-          <Button style={{color:'gray'}}><h5>Close</h5></Button>
-          <Button style={{color:'black'}}><h4>GO PREMIUM</h4></Button>
-         
+          <Button className='btn' style={{color:'gray'}}><h5>Close</h5></Button>
+          <Button className='btn1' style={{color:'black'}}><h4>GO PREMIUM</h4></Button>
+          </div>
+           <div className='d-flex month' >
+             
+               
+               <Link   className={step ===1 && "active d-flex"} onClick={()=>setStep(1)}>LAST MONTH</Link>
+               
+               
+               <Link   className={step ===2 && "active d-flex"} onClick={()=>setStep(2)}>THIS MONTH</Link>
+               
+               
+               <Link   className={step ===3 && "active d-flex"} onClick={()=>setStep(3)}>FUTURE</Link>
+               
+             
+           </div>
           
-        </div>
+        
       </Card>
     </div>
   );
